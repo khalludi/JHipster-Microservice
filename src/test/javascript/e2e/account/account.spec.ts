@@ -19,7 +19,7 @@ describe('account', () => {
             expect(value).toMatch(expect1);
         });
         signInPage = navBarPage.getSignInPage();
-        signInPage.loginWithOAuth('admin', 'foo');
+        signInPage.loginWithOAuth(process.env.LOGIN_ADMIN_USER, process.env.LOGIN_ADMIN_PASSWORD);
 
         // Keycloak
         const alert = element.all(by.css('.alert-error'));

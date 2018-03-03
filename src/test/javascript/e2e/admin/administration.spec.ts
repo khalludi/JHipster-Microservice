@@ -9,7 +9,7 @@ describe('administration', () => {
         browser.get('/');
         browser.waitForAngular();
         navBarPage = new NavBarPage(true);
-        navBarPage.getSignInPage().loginWithOAuth('admin', 'admin');
+        navBarPage.getSignInPage().loginWithOAuth(process.env.LOGIN_ADMIN_USER, process.env.LOGIN_ADMIN_PASSWORD);
         browser.waitForAngular();
     });
 

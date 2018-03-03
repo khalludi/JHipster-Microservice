@@ -2,7 +2,8 @@
   "generator-jhipster": {
     "promptValues": {
       "packageName": "com.okta.developer.gateway",
-      "nativeLanguage": "en"
+      "nativeLanguage": "en",
+      "microservicePath": "../blog"
     },
     "jhipsterVersion": "4.14.1",
     "baseName": "gateway",
